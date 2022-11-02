@@ -1,4 +1,3 @@
-from urllib import response
 from bs4 import BeautifulSoup
 import requests
 from csv import writer
@@ -30,7 +29,7 @@ with open('cars_subito.csv', 'w', encoding='utf8', newline='') as f:
             for i in range(6 - difference):
                 specs[i] = specs[i].text
             for i in range(difference):
-                specs.append(' ')
+                specs.append('')
             list = specs
         else:
             for i in range(len(specs)):
